@@ -1,13 +1,5 @@
 package learn.t.concurrent.tstatic;
 
-/*
- * Class: StaticMethod
- * Description: TODO
- * Version: 0.0.1
- * author: gaichao || Creation date: 2019/6/18 13:31
- * Copyright (c) 2018, ZHUNING Technology Corporation,
- * All rights reserved.
- */
 public class StaticMethod {
 
     public synchronized static void oneMethod()

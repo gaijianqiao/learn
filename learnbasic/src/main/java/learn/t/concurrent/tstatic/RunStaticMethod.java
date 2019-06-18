@@ -4,14 +4,7 @@ import java.util.Vector;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-/*
- * Class: RunStaticMethod
- * Description: TODO
- * Version: 0.0.1
- * author: gaichao || Creation date: 2019/6/18 13:33
- * Copyright (c) 2018, ZHUNING Technology Corporation,
- * All rights reserved.
- */
+
 public class RunStaticMethod {
 
     public static void main(String[] args) {
