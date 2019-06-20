@@ -8,14 +8,23 @@ public class NoVisibility {
     public static void main(String[] args) {
 
         new ReaderThread().start();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         number = 2;
         ready = true;
+        System.out.println(number);
+        System.out.println(ready);
     }
 
     private static class ReaderThread extends Thread {
         public void run() {
+            System.out.println("thread:"+ready);
             while (!ready) {
-                Thread.yield();
+
+                System.out.println("loop log");
             }
         }
     }
