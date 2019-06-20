@@ -22,6 +22,8 @@ public class RunUnmodifyObject {
         DelegatingVehicleTracker tracker = new DelegatingVehicleTracker(maps);
         Map unmodifyMap = tracker.getLocations();
 
+        Map unmodifyMap2 = tracker.getLocations2();//浅拷贝的结果不会跟着实时改变
+
         tracker.setLocation("1",11,11);
 
         System.out.println("");

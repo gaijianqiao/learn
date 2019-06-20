@@ -1,6 +1,7 @@
 package learn.t.concurrent.delegating;
 
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -24,6 +25,11 @@ public class DelegatingVehicleTracker {
     public Map getLocations()
     {
         return unmodifiableMap;
+    }
+    //通过一个新的对象赋值给不便的对象从而，实现了不随着location的改变。
+    public Map getLocations2()
+    {
+        return Collections.unmodifiableMap(new HashMap(locations));
     }
 
     public Point getPoint(String id)
